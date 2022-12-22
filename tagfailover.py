@@ -52,7 +52,6 @@ while True:
         for network in response.json():
             tagsModified = []
             if network['ip'] in ipToMonitor:
-                print(ipToMonitor)
                 network_info = requests.get("https://api.meraki.com/api/v1/networks/" + network['networkId'],
                                             headers=header)
                 if network_info.status_code != 200:
