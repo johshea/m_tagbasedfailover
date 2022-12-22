@@ -1,7 +1,7 @@
 #######
 # upcoming enhancements:
 # 1) Meraki SDK Integration
-# 3) move Monitored IPs to external file for real time updates without restarting script
+#
 # 4) integrate with Webex for ChatOPS
 #
 #to run tagfailover.py --apikey <value> --orgid <value>
