@@ -46,7 +46,7 @@ ipToMonitor = ['insert Ip here']
 
 while True:
     eventtime = datetime.datetime.now()
-    exceptionlog = "exceptions.txt"
+    exceptionLog = "exceptions.txt"
     try:
         response = requests.get(url, headers=header)
         for network in response.json():
@@ -110,10 +110,10 @@ while True:
                         networkDownList.remove(network['networkId'])
 
     except Exception as error:
-        logdata = (error.__class__)
-        inpath = Path(exceptionlog)
+        logData = (error.__class__)
+        inpath = Path(exceptionLog)
         with inpath.open('a') as ef:
-            ef.write(str(eventtime) + ' ' + str(logdata) + '\n')
+            ef.write(str(eventtime) + ' ' + str(logData) + '\n')
         print(eventtime, "exception occurred & logged.")
         pass
 
