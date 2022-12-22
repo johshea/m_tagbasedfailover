@@ -42,7 +42,7 @@ header = {"X-Cisco-Meraki-API-Key": api_key, "Content-Type": "application/json"}
 networkDownList = []
 
 # Specify primary monitored IPs to include from the script, typicaly the Primary Zscaler IPs you monitor  added to the SDWAN and Traffic shaping Tab)
-ipToMonitor = ['4.2.2.2']
+ipToMonitor = ['insert Ip here']
 
 while True:
     eventtime = datetime.datetime.now()
