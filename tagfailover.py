@@ -41,7 +41,7 @@ header = {"X-Cisco-Meraki-API-Key": api_key, "Content-Type": "application/json"}
 
 networkDownList = []
 
-# Specify primary monitored IPs to include from the script, typicaly the Primary Zscaler IPs you monitor  added to the SDWAN and Traffic shaping Tab)
+#Make sure ipToMonitor.txt is populated with the remote IPs you wish to monitor
 
 while True:
     monitoredIps = []
