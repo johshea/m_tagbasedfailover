@@ -48,10 +48,13 @@ while True:
     eventtime = datetime.datetime.now()
     exceptionlog = "exceptions.txt"
     ipsToMonitor = "ipToMonitor.txt"
-
+    
+    #Since this read from a file monitored endpoints can be updated on the fly without stopping the script
+    #read the file and append to the monitoredIps list object
     with open(ipsToMonitor) as file:
         while (line := file.readline().rstrip()):
             monitoredIps.append(line)
+            
     try:
         response = requests.get(url, headers=header)
         for network in response.json():
