@@ -41,7 +41,7 @@ header = {"X-Cisco-Meraki-API-Key": api_key, "Content-Type": "application/json"}
 
 networkDownList = []
 
-#Make sure ipToMonitor.txt is populated with the remote IPs you wish to monitor
+#Make sure ipToMonitor.txt is populated with the remote IPs you wish to monitor, these should match the monitored IPs you added in Dashboard
 
 while True:
     monitoredIps = []
