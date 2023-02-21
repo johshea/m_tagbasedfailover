@@ -78,6 +78,8 @@ while True:
                         primary = tag
                     elif "_backup" in tag:
                         backup = tag
+                    else:
+                        tagsModified.append(tag)
 
 
 
